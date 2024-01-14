@@ -14,10 +14,13 @@
     {{ form_start(registrationForm) }}
         {{ form_row(registrationForm.email) }}
         {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
+            label: 'mot de passe'
         }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
+        {{ form_row(registrationForm.agreeTerms, {
+            label: "Accepter les Conditions d'utilisations de vos données personnelles"
+        } )}}
+        <a href = "{{path('app_rgpd')}}">Réglementation Générale de la Protection des Données</a>
+        <br>
         <button type="submit" class="btn">S'enregistrer</button>
     {{ form_end(registrationForm) }}
 {% endblock %}

@@ -1,4 +1,5 @@
-import './bootstrap.js';
+import 'bootstrap';
+
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -7,4 +8,31 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+
+// import jquery
+const $ = require('jquery');
+
+//bootstrap
+require('bootstrap');
+
+//import js password file
+import "./ShowAndHiddePassword.js";
+
+//import plugins js
+import './plugins.js';
+
+//import modernizr js
+import './modernizr.js';
+
+//import jquery.3.5.0
+import './jquery-3.5.0.min.js';
+
+//import main js
+import './main.js';
+
+//import fontawesome all min js
+import './all.min.js';
+
+
+
+
